@@ -10,7 +10,7 @@
 ## Hidden Markov Model 
 
 - **Purpose:** Predict NER tags (like `B-LOC`, `I-PER`, `O`, etc.) for each word.
-- **Accuracy:** *(Not explicitly printed in the shared output, but computed using tag-level correctness)*
+- **Accuracy:** *68.27%
 - **Tagging Sentence:** Appears to provide valid NER tag predictions (though no exact accuracy reported in this snippet).
 
 ---
@@ -20,4 +20,4 @@
 | Model        | Purpose            | Accuracy      | Relevance to NER     | Evaluation             |
 |--------------|--------------------|---------------|-----------------------|-------------------------|
 | Trigram LM   | Predict next word  | 12.66%        | [X] Not for NER         | Weak for NER tasks      |
-| HMM_NER      | Predict NER tags   | *(Not shown)* | [/] Designed for NER    | Likely much better      |
+| HMM_NER      | Predict NER tags   | 68.27%        | [/] Designed for NER    | Likely much better      |
