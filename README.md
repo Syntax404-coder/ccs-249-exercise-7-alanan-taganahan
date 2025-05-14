@@ -1,16 +1,37 @@
-## Features
-- **Data Prep**: Load CSV with `Sentence` (words) and `Tag` (lists of labels).  
-- **HMM Class**:  
-  - Tag transition, emission, and start probability estimation  
-  - Viterbi algorithm for best-tag sequence  
-- **Evaluation**: 80/20 train/test split, reports accuracy.  
-- **Demo**: Predict tags for `["Manila", "is", "the", "capital", "of", "the", "Philippines"]`
+# 🧠 tc_ner_model
 
-## Usage
-1. Install dependencies: `pandas`.  
-2. Place `load_conll2003_file` in working dir.  
-3. Run the notebook or `python your_notebook.py`.
+Welcome to my exploration of NLP modeling using both a **Trigram Language Model** and a **Hidden Markov Model for Named Entity Recognition (NER)**. This project dives into understanding how different models perform in tagging named entities using the CoNLL-2003 dataset.
 
-## Next
-- Handle unknown words via suffix/prefix features  
-- Compare with CRF models  
+---
+
+## 📌 Objective
+
+I wanted to compare two types of models:
+- A **Trigram Language Model**, designed to predict the next word in a sequence.
+- A **Hidden Markov Model (HMM)**, specifically trained for **Named Entity Recognition (NER)**.
+
+My goal? To see how well each performs and to get hands-on experience with sequence modeling.
+
+---
+
+## 📂 Dataset
+
+I'm using the [CoNLL-2003 dataset](https://www.clips.uantwerpen.be/conll2003/ner/), which contains English sentences annotated with:
+- Named entities like **Persons (PER)**, **Organizations (ORG)**, **Locations (LOC)**, and **Miscellaneous (MISC)**.
+
+> 📍 File used: `conll2003/eng.train`
+
+---
+
+## 🚀 Models Implemented
+
+### 1. Trigram Language Model
+- Predicts the next word given a bigram context.
+- Useful for understanding sentence structure.
+- **Not designed** for NER.
+- **Accuracy:** ~12.66%
+- Generated sentences were often incoherent or generic.
+
+```python
+context = ['capital', 'of']
+model.predict_next(context)
