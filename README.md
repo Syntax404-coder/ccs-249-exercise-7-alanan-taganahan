@@ -1,6 +1,6 @@
 # 🧠 tc_ner_model
 
-Welcome to my exploration of NLP modeling using both a **Trigram Language Model** and a **Hidden Markov Model for Named Entity Recognition (NER)**. This project dives into understanding how different models perform in tagging named entities using the CoNLL-2003 dataset.
+CCS-249-Exercise-7-alanan-taganahan's **Trigram Language Model** and a **Hidden Markov Model for Named Entity Recognition (NER)**. This project dives into understanding how different models perform in tagging named entities using the CoNLL-2003 dataset.
 
 ---
 
