@@ -8,7 +8,7 @@
 
 ## Usage
 1. Install dependencies: `pandas`.  
-2. Place `ner.csv` in working dir.  
+2. Place `load_conll2003_file` in working dir.  
 3. Run the notebook or `python your_notebook.py`.
 
 ## Next
