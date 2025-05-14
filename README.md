@@ -1,7 +1,3 @@
-# HMM-Based NER
-
-A minimal implementation of a Hidden Markov Model for Named Entity Recognition, from data loading through Viterbi decoding.
-
 ## Features
 - **Data Prep**: Load CSV with `Sentence` (words) and `Tag` (lists of labels).  
 - **HMM Class**:  
